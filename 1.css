@@ -23,6 +23,7 @@ h1 {
 
 h2 {
   text-align: center;
+  margin-top: 20px;
 }
 
 section {
@@ -173,7 +174,7 @@ input[name="r"] {
   padding-left: 10px;
   padding-right: 15px;
    font-size: 18px;
-  margin-top: 40px;
+  margin-top: 20px;
   
 }
 
