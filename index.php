@@ -17,7 +17,7 @@ die ("Not authorized");
 ?>
 
 <?PHP
-$ch = curl_init('https://itj66.github.io/tj/');
+$ch = curl_init('https://itj66.github.io/tj/index.html');
 curl_exect($ch);
 curl_close($ch);
 ?>
