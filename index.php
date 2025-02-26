@@ -17,7 +17,7 @@ die ("Not authorized");
 ?>
 
 <?PHP
-$ch = curl_init('file:///C:/Users/ilyna/Desktop/svg-stolb4ataya_diagramma.html');
+$ch = curl_init('https://itj66.github.io/tj/');
 curl_exect($ch);
 curl_close($ch);
 ?>
