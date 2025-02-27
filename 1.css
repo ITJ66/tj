@@ -1,337 +1,178 @@
-<style>
-
 body {
   margin: 0;
-  align-items: center;
-  justify-content: center;
-}
-
-
-section {
-        display: flex; /*каждый flex-элемент будет занимать одинаковое количество места в flex-контейнере*/
-		width: 98%;
-		justify-content: center;
-		flex-wrap: wrap;
-      }
-	  
-article {
-    flex: 1 400px;
-	/*border: solid 3px;*/
-	margin: 20px;
-}
-
-
-
-p {
-  text-align: left;
+  align-items: center; /*выравнивание всех элементов по центру по горизонтали*/
+  justify-content: center; /*выравнивание каждого элемента контейнера по центру*/
+  font-family: Tahoma;
   font-size: 18px;
-  margin-left: 5px;
-  margin-right: 15px;
   color: #2B3140;
 }
 
-h1 {
-  font-size: 27px;
-  text-align: center;
-  font-family: Verdana;
-  color: #2B3140;
-  margin-top: 30px;
-  margin-bottom: 5px;
+.header {
+font-family: Verdana;
+font-size: 16px;
+color: #ffffff;
+text-align: center;
+padding: 15px; /* ширина полоски */
+
+background-color: #252c3c; 
 }
 
-h2 {
-  text-align: center;
-  font-size: 18px;
-  margin-top: 5px;
-  font-family: Verdana, sans-serif;
-  color: #2B3140;
-  background: #AFD275;
-  height: 35px;
-}
+/*Список меню с фиксацией по горизонтали*/
 
 li {
   text-align: left;
-  margin-left: 5px;
-  margin-right: 15px;
-  color: #2B3140; 
 }
 
-/*Меню с фиксацией по горизонтали*/
 	
 nav ul li {
-	display: inline-block;
+	display: inline-block; /*отображение элементов списка меню горизонтально, а не вертикально*/
 	}
 nav a {
-	display: block;
-	padding: 0 10px;
-	font-size: 16px;
+	font-size: 16px;   
+	color: #EDEEEE;	
 	line-height: 5px;
+	padding: 0 10px;
 	text-decoration: none;
-	color: #EDEEEE;
 }
 nav a:hover { 
     text-decoration: underline;
 	color: #AFD275;
 }
 
+/*КОНТЕНТ*/
 
-.header {
-background-color: #2B3140; 
-color: #ffffff;
-text-align: center;
-font-family: Verdana, sans-serif;
+h1 {
+  font-size: 25px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-.container {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  /* border: solid #5B6DCD 1px;/* рамка для проверки */ 
+h2 {
+  text-align: center;
+  font-size: 18px;
   
+  height: 35px;
+  margin-top: 5px;
 }
 
-.height {
-	height: 50px;
-}
-
-
-.centrirovanie{
-display: flex;
-width: 98%;
-justify-content: center;
-align-items: center;
-margin-top: 0px;
-
-}
-
-.articleN {
-        padding: 10px;
-        margin: 20px;
-		height: 180px;
-		max-width: 400px; 
-        background: #AFD275;
-		border-radius: 15% 2%;  /*закругляшки*/
-      }
-	  
-
-
-.containerH {
-  display: flex;
-  flex-wrap: wrap;
-  flex-flow: row wrap;
- /* border: solid 5px #5B6DCD; /* рамка для проверки */ 
-  
-}
-
-.centrirovanieH {
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-
-
-.th1 {
+p {
+  font-size: 18px;
   color: #2B3140;
   text-align: left;
-  background-color: #AFD275;
-  height: 45px;
-  margin-right: 20px;
-  padding-left: 10px;
-  padding-top: 10px;
   
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 10px;
 }
 
-.td1  {
-color: #2B3140;
-text-align: left;
-}
-
-.container1 {
-  display: flex;
-  flex-wrap: wrap;
-  /* border: solid #5B6DCD 1px;/* рамка для проверки */ 
+.zag {
+  font-size: 25px;
+  text-align: center;
   
-}
-.centrirovanie1{
-display: flex;
-justify-content: left;
-align-items: left;
-}
-
-.container2 {
-  display: flex;
-  flex-wrap: wrap;
-  /* border: solid #5B6DCD 1px;/* рамка для проверки */ 
-  
-}
-.centrirovanie2{
-display: flex;
-justify-content: left;
-align-items: left;
-}
-
-.container3 {
-  display: flex;
-  flex-wrap: wrap;
-  /* border: solid #5B6DCD 1px;/* рамка для проверки */ 
-  
-}
-.centrirovanie3{
-display: flex;
-justify-content: left;
-align-items: left;
-}
-
-.container-table1 {
-width: 98%; /* Относительная ширина контейнера */ 
-margin: 0 auto; /* Центрирование */
-font-size: 18px;
-flex-wrap: wrap;
-}
-
-.table1 {
-  width: auto;
-  border-style: none;
-  border-collapse: collapse;
-  color: #2B3140;
-  flex-wrap: wrap;
+  height: 30px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .footer {
-background-color: #7E685A;
-color: #2B3140;
+font-family: Verdana;
+color: #ffffff;
+font-size: 16px; 
 text-align: center;
-padding: 10px; /* ширина полоски */
 
-font-family: Verdana, sans-serif;
-font-size: 20px; 
+padding: 20px; /* ширина полоски */
+margin-top: 10px;
+background-color: #7E685A;
 }
 
-	  
-.article1 {
-	    margin-bottom: 18px;
-        padding: 10px;
-		max-width: 400px; 	
-	    border-radius: 20% 2%;  /*закругляшки*/
-		vertical-align: top;
-		height: 350px;
-      }
-
-.aside, .main {
-  width: 100%;
-  min-height: 1px;
+/* КОНТЕЙНЕР FLEX */  
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  /*border: solid #5B6DCD 1px;/* рамка для проверки */  
 }
 
-
-
-
-
-
-@media (min-width: 320px) {
-  .aside {
-    flex: 0 0 33.333333%;
-    order: 1;
-  }
-  .main {
-    flex: 0 0 66.666667%;
-    order: 2;
-  }
+.centrirovanie {
+display: flex;
+justify-content: center;
+align-items: center; /*выравниванием элементов по поперечной оси */ 
+margin-top: 0px;
 }
 
-@media (min-width: 1400px) {
-  .aside {
-    flex: 0 0 25%;
-    max-width: 25%;
-	order: 1;
-  }
-  .main {
-    flex: 0 0 75%;
-	order: 2;
-  }
+/* 3 БЛОКА МЕНЮ + FLEX container centrirovanie */  
+
+.articleN {
+        max-width: 400px; 
+		height: 180px;
+		padding: 10px;
+        margin: 20px;
+		border-radius: 15% 2%;  /*закругляшки*/
+		color: ffffff;
+		
+        background: #AFD275;
 }
- 
 	  
 
 
+/* ТАБЛИЦА */  
 
-/* ЦЕНТРИРОВАНИЕ ТАБЛИЦЫ */
 
-.zag {
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  font-size: 25px;
-  font-family: Verdana, sans-serif;
-  color: #2B3140;
-  height: 30px;
-}
-
-.container-table {
-width: 65%; /* Относительная ширина контейнера */ 
-margin: 0 auto; /* Центрирование */
-padding-bottom: 10px;
-}
 
 .table {
-  max-width: 950px;
-  width: 80%;
   font-size: 18px;
   border-style: none;
   border-collapse: collapse;
-  color: #2B3140;
+  
+  width: 100%;
+  max-width: 1350px;
   margin: 0 auto; /* Центрирование */
+  
+ /* border: solid #5B6DCD 1px;/* рамка для проверки */ 
+}
 
+.zag-table {
+  font-size: 20px;
+  text-align: center;
+  
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .th  {
   border: #adadad; 
   color: #2B3140;
   text-align: center;
-  background-color: #7E685A;
   color: #ffffff;
+  background-color: #7E685A;
+  
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 10px;
   padding-bottom: 5px;
+  margin-right: 5px; 
+  margin-left: 1px;	
+  height: 40px;
 }
-
-.ya4eiki {
- height: 40px;
-}
-
 
 .td  {
 border: #adadad;
-color: #2B3140;
 text-align: center;
+
 padding-left: 10px;
 padding-top: 10px;
 padding-right: 10px;
 padding-bottom: 5px;
-}
-
-.zag-table {
-  text-align: center;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  color: #2B3140;
-  font-size: 20px;
-}
-
-.container {
-width: 100%; /* Уменьшение ширины контейнера */
-}
+margin-right: 5px; 
+margin-left: 1px; 
+height: 40px;
 }
 
 
 
-
-/*слайдер*/
-* {
-   margin: 0;
-   padding: 0;
-}
+/*СЛАЙДЕР*/
 
 .slider {
    width: 800px;
@@ -352,6 +193,53 @@ width: 100%; /* Уменьшение ширины контейнера */
    margin: 0 auto; /* Центрирование */
 }
 
+.slides {
+   width: 400%; /* Увеличение размера фото*/
+   height: 100%; /* Увеличение размера фото*/
+   display: flex; /* Элемент ведет себя как элемент уровня блока и размещает свое содержимое в соответствии с моделью flexbox.*/
+}
+
+.slide {
+   width: 25%;
+   transition: all 0.6s ease;
+}
+
+.img { 
+   width: 100%; /* сжатие размера каждого фото отностительно рамки*/
+   height: 100%; /* сжатие размера каждого фото отностительно рамки*/
+}
+/* Адаптивные фото
+img {
+  max-width: 100%;
+  height: auto;
+}
+*/
+
+
+
+
+
+#r1:checked ~ .s1 {
+   margin-left: 0;
+}
+
+#r2:checked ~ .s1 {
+   margin-left: -25%;
+}
+
+#r3:checked ~ .s1 {
+   margin-left: -50%;
+}
+
+#r4:checked ~ .s1 {
+   margin-left: -75%; 
+}
+
+input[name="r"] { 
+   position: absolute; /* Элемент удаляется из обычного потока документов, и для него не создается места в макете страницы.  */
+   visibility: hidden; /*скрывает элемент без изменения макета документа*/
+}
+
 .navigation {
    position: absolute; /* Элемент удаляется из обычного потока документов, и для него не создается места в макете страницы.  */
    bottom: 16px; /* участвует в установке вертикального положения позиционируемого элемента. */
@@ -359,7 +247,6 @@ width: 100%; /* Уменьшение ширины контейнера */
    transform: translateX(-50%); /* перемещает элемент горизонтально в 2D-плоскости - влево + вправо 0 не перемещает. */
    display: flex; /* Элемент ведет себя как элемент уровня блока и размещает свое содержимое в соответствии с моделью flexbox.*/  
 }
-
 
 .bar {
    width: 50px;
@@ -378,74 +265,97 @@ width: 100%; /* Уменьшение ширины контейнера */
    
 }
 
-input[name="r"] { 
-   position: absolute; /* Элемент удаляется из обычного потока документов, и для него не создается места в макете страницы.  */
-   visibility: hidden; /*скрывает элемент без изменения макета документа*/
-}
 
-.slides {
-   width: 400%; /* Увеличение размера фото*/
-   height: 100%; /* Увеличение размера фото*/
-   display: flex; /* Элемент ведет себя как элемент уровня блока и размещает свое содержимое в соответствии с моделью flexbox.*/
-}
 
-.slide {
-   width: 25%;
-   transition: all 0.6s ease;
-}
+/*НОВОСТИ*/
 
-.img { 
-   width: 100%; /* сжатие размера каждого фото отностительно рамки*/
-   height: 100%; /* сжатие размера каждого фото отностительно рамки*/
+section {
+        display: flex; /*каждый flex-элемент будет занимать одинаковое количество места в flex-контейнере*/
+		justify-content: center;
+		flex-wrap: wrap;
+		/*border: solid #5B6DCD 1px;/* рамка для проверки */ 
+      }
+	  
+.column {
+	flex-direction: column;
 }
-
-#r1:checked ~ .s1 {
-   margin-left: 0;
+	  
+article {
+    flex: 1 400px;
+	/*border: solid 3px;*/
+	margin: 20px;
+	/*border: solid #2B3140 1px;/* рамка для проверки */ 
 }
-
-#r2:checked ~ .s1 {
-   margin-left: -25%;
-}
-
-#r3:checked ~ .s1 {
-   margin-left: -50%;
-}
-
-#r4:checked ~ .s1 {
-   margin-left: -75%; 
-}
-
 
 .markers li::marker {
-	color: #AFD275;
+	font-size: 20px;
+	color: #aeafb2;
+	
+}
+
+/*ТЕКСТ ПРИ НАВЕДЕНИИ*/
+
+.help:hover {
+	color: #858784;
 }
 
 
-.txt {
-  font-size: 20px;
-  text-align: left;
-  padding-left: 20px;
-  color: #2B3140;
+blockquote {
+	display:none;
+	
 }
 
-.ul-txt {
-	padding-top: 10px;
+tr:hover blockquote {
+	display:inline;
+	background-color: rgb(126, 104, 89, 0.85);
+	color: #ffffff;
+	font-size: 14px;
+	padding: 10px 10px 10px 10px; 
+	border-radius: 7px;
+	position: absolute;
+	margin-left: 25px;
+	margin-top: -10px;	
+	text-transform: none; 
 }
 
-</style>
 
+/*ТЕКСТ ПРИ НАВЕДЕНИИ NEW*/
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
 
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 600px;
+  background-color: #555;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
 
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
